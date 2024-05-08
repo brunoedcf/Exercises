@@ -1,0 +1,15 @@
+2.1 - Remove duplicates.
+
+2.2 - Return Kth to last element.
+
+2.3 - Delete middle node.
+
+2.4 - Partition a single linked around a value x.
+
+2.5 - Sum two numbers (represented by linked lists in reverse order).
+
+2.6 - Check if a linked list is a palindrome.
+
+2.7 - Check if there is a node intersection between two linked lists.
+
+2.8 - Loop Detection: Return the node that begins a loop in a linked list (circular).
