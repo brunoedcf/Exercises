@@ -123,7 +123,20 @@ public:
     void printTopToBottom() {
         cout << "Printing Set of Stacks Top to Bottom" << endl;
         for(int i = stacks.size() - 1; i >= 0; i--){
+            cout << "Stack " << i+1 << endl;
             stacks[i]->printTopToBottom();
+        }
+    }
+
+    void popAtIndex(int i) {
+        if( ( stacks.size() - 1 ) < i) {
+            cout << "Out of index" << endl;
+        }
+        else {
+            if(stacks[i]->getSize() == 1){
+                stacks.erase(stacks.begin() + i);
+            }
+            else stacks[i]->pop();
         }
     }
 
@@ -145,7 +158,15 @@ int main() {
     myStacks.push(33);
     myStacks.push(56);
 
+    myStacks.popAtIndex(1);
+    myStacks.popAtIndex(1);
+    myStacks.popAtIndex(1);
+    myStacks.popAtIndex(0);
+    myStacks.popAtIndex(1);
+
     myStacks.printTopToBottom();
+
+    myStacks.popAtIndex(4);
 
     return 0;
 }
